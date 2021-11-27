@@ -33,7 +33,7 @@ window.addEventListener('keydown', (e) => {
 });
 
 function addTask() {
-  const thisDate = generateTimeAndInfo();
+  const thisDate = `Data da tarefa: ${generateTimeAndInfo()}`;
   
   task_tipEl.style.position = 'absolute';
   task_tipEl.style.visibility = 'hidden';
@@ -46,7 +46,8 @@ function addTask() {
 
   task_divEl.addEventListener("click", remove);
   
-  task_divEl.addEventListener('click', markAsDone);
+  task_divEl.addEventListener('click', 
+  () => {markAsDone(task_divEl)});
   
   // Botão de remoção da atividade
   // CRIAR FUNÇÂO SEPARADA
@@ -64,13 +65,9 @@ function addTask() {
   canAdd = false;
 }
 
-function markAsDone(e){
-  const item = e.target;
-  if (item.classList[0] === 'task') {
-    const task = item.parentElement;
-    item.style.backgroundColor = '#33cd22';
-    item.style.border = "5px solid #cd3323";
-  }
+function markAsDone(item){
+  item.style.backgroundColor = '#33cd22';
+  item.style.opacity = '0.5';
 }
 
 function generateTimeAndInfo (info) {
@@ -83,7 +80,7 @@ function generateTimeAndInfo (info) {
   const mh = data.getMonth();
   const y = data.getFullYear();
   
-  return `Data da tarefa: ${returnData(h)}:${returnData(m)} | ${returnData(d)}/${returnData(mh)}/${y}`;
+  return `${returnData(h)}:${returnData(m)} | ${returnData(d)}/${returnData(mh)}/${y}`;
   
   function returnData(d) {
     if(d < 10) {
