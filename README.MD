@@ -12,8 +12,8 @@
 </ul>
 
 ## Exemplificação dos aplicativos
-<img src='./Imagens/capturas/App-Stopwatch.png'/>
+<img style="aspect-ratio: 1; width: 100px;" src='./Imagens/capturas/App-Stopwatch.png'/>
 <div style= "background: #11223335; width: 99%; padding: 3px; margin: 2px; border-radius: 5px;">Descrição app 1</div>
 
-<img src='./Imagens/capturas/App-ToDo.png'/>
+<img style="aspect-ratio: 1; width: 100px;" src='./Imagens/capturas/App-ToDo.png'/>
 <div style= "background: #11223335; width: 99%; padding: 3px; margin: 2px; border-radius: 5px;">Descrição app 2</div>
