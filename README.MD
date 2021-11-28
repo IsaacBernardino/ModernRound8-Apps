@@ -12,8 +12,8 @@
 </ul>
 
 ## Exemplificação dos aplicativos
-<img style="aspect-ratio: 1; width: 100px;" src='./Imagens/capturas/App-Stopwatch.png'/>
-<div style= "background: #11223335; width: 99%; padding: 3px; margin: 2px; border-radius: 5px;">Descrição app 1</div>
+<img style="aspect-ratio: 1; width: 135px; outline: 1px solid #00000065;" src='./Imagens/capturas/App-Stopwatch.png'/>
+<div style= "background-color: #11223335; width: 250px; padding: 3px; margin: 2px; border-radius: 5px;"> Cronômetro escrito inteiramente em JS.</div>
 
-<img style="aspect-ratio: 1; width: 100px;" src='./Imagens/capturas/App-ToDo.png'/>
-<div style= "background: #11223335; width: 99%; padding: 3px; margin: 2px; border-radius: 5px;">Descrição app 2</div>
+<img style="aspect-ratio: 1; width: 135px; outline: 1px solid #00000065;" src='./Imagens/capturas/App-ToDo.png'/>
+<div style= "background-color: #11223335; width: 250px; padding: 3px; margin: 2px; border-radius: 5px;">Descrição app 2</div>
