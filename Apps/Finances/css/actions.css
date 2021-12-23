@@ -1,0 +1,37 @@
+#actions {
+  height: 385px;
+  overflow-y: auto;
+}
+
+.action {
+  background: #333;
+  color: #eee;
+
+  height: 120px;
+  padding: 5px 10px;
+  margin: 5px 0;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.expanse {
+  background: #aa1225;
+}
+
+.gain {
+  background: #12bb25;
+}
+
+.action h1 {
+  font-size: 22pt;
+  width: 50%;
+  color: #eee;
+}
+
+.action h2 {
+  font-size: 16pt;
+  width: 100%;
+}

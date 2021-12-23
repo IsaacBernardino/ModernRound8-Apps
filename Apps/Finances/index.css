@@ -1,0 +1,152 @@
+/*
+Moderm Round8 v1.0
+autor: Senior
+git: https://github.com/IsaacBernardino
+*/
+
+@font-face {
+  font-family: Poppins;
+  src: url('./fonts/Poppins/Poppins-Bold.ttf') format("ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('./fonts/Poppins/Poppins-Regular.ttf') format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('./fonts/Poppins/Poppins-Light.ttf') format("ttf");
+  font-weight: 200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: Poppins, Helvetica, Arial;
+}
+
+body {
+  position: relative;
+  background-color: #aeaeae;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  background: linear-gradient(#eee , #ffffff10);
+  width: 100%;
+  height: 75px;
+  padding: 0 8px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 28pt;
+  color: #334;
+}
+
+.menu {
+  position: fixed;
+  bottom: 15px;
+
+  background-color: #eee;
+  width: calc(100vw - 35px);
+  height: 60px;
+
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu .item {
+  width: 45px;
+  aspect-ratio: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 11pt;
+}
+
+.menu .item-ativo {
+  background-color: #00000032;
+  border-radius: 45px;
+
+  transition: all ease-out 0.3s;
+}.item-ativo::before {
+  content: '';
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #eee;
+
+  position: absolute;
+  top: -14px;
+}
+
+.menu .item img {
+  width: 32px;
+  aspect-ratio: 1;
+}
+
+/* MENU ITENS  */
+
+.menu #add_btn {
+  width: 120px;
+  height: 45px;
+
+  justify-content: space-around;
+} .menu #add_btn img {
+  width: 24px;
+  aspect-ratio: 1;
+}
+
+/* App */
+.app-container {
+  position: relative;
+
+  width: calc(100% - 30px);
+  /* Tamanho maximo - tam. do header - tam. do menu - espaco */
+  height: calc(100vh - 75px - 75px - 35px);
+
+  margin: 15px 0;
+  padding: 5px 10px;
+
+  background: linear-gradient(#aeaeae00, #fff);
+
+  border-radius: 15px;
+  box-shadow: #22222265 0px 25px 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container #title {
+  font-size: 18pt;
+  font-weight: 800;
+
+  border-bottom: 1px solid  #00000035;
+
+  margin-bottom: 10px;
+}

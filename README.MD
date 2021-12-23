@@ -12,10 +12,7 @@
 </ul>
 
 ## Exemplificação dos aplicativos
-<div style="display: flex;">
+<div>
   <img style="aspect-ratio: 1; width: 135px;" src='./Imagens/capturas/App-Stopwatch.png'/>
-  <div style= "margin: 5px 0;"> Cronômetro escrito inteiramente em JS.</div>
-
   <img style="aspect-ratio: 1; width: 135px;" src='./Imagens/capturas/App-ToDo.png'/>
-  <div style= "margin: 5px;">Descrição app 2</div>
 </div>
