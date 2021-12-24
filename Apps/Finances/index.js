@@ -43,21 +43,25 @@ window.addEventListener('load', () => {
 
 // Cliques
 home_button.addEventListener('click', () => {
+  page_title.innerHTML = 'Inicio'
   disablePages()
   activePageOnClick(home_screen, home_button);
 });
 
 expanse_button.addEventListener('click', () => {
+  page_title.innerHTML = 'Gastos Gerais'
   disablePages();
   activePageOnClick(expanse_screen, expanse_button);
 });
 
 gain_button.addEventListener('click', () => {
+  page_title.innerHTML = 'Ganhos Gerais'
   disablePages();
   activePageOnClick(gain_screen, gain_button);
 })
 
 add_button.addEventListener('click', () => {
+  page_title.innerHTML = 'Adicionar Ação'
   disablePages();
   activePageOnClick(add_screen, add_button)
 })
