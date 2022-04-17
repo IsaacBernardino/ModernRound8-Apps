@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt_br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finance</title>
-  <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="./css/pages.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/pages.css">
 
-  <link rel="stylesheet" href="./css/actions.css">
+    <link rel="stylesheet" href="./css/actions.css">
 </head>
+
 <body>
-  
-  <header>
-    <h1>Finance</h1>
-  </header>
 
-  <div class="app-container">
-    <div id="title">
-    </div>
+    <header>
+        <h1>Finance</h1>
+    </header>
 
-    <div class="content">
+    <div class="app-container">
+        <div id="title">
+        </div>
 
-      <div id="home">
-        <div>Linha de tempo das ações </div>
+        <div class="content">
 
-        <div id="actions">
+            <div id="home">
+                <div>Linha de tempo das ações </div>
 
-          <!-- <div class="action expanse">
+                <div id="actions">
+
+                    <!-- <div class="action expanse">
             <h1>#Title#</h1>
             <h1>#value#</h1>
             <h2>#data#</h2>
@@ -40,60 +42,61 @@
             <h2>#data#</h2>
             <h3>#tipo</h3>
           </div> -->
-          <div class="action">
-            <h1>Sem Ações</h1>
-          </div>
+                    <div class="action">
+                        <h1>Sem Ações</h1>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h1>Previsão para o mês:</h1>
+                    BOM
+                </div>
+
+                <div id="bottom-fixed">
+                    Orçamento do mês: <span id="amount_value">9999,99</span>
+                </div>
+            </div>
 
         </div>
 
-      <div>
-        <h1>Previsão para o mês:</h1>
-        BOM
-      </div>
-      
-      <div id="bottom-fixed">
-        Orçamento do mês: <span id="amount_value">9999,99</span>
-      </div>
-</div>
+        <div id="expanse">general expense</div>
+        <div id="gain">general gain</div>
+        <div id="add">
+            <div>
+                <label for="task_name">Nome da ação:</label>
+                <input type="text" name="task_name" id="task-name">
 
-      </div>
+                <label for="task_value">Valor da ação:</label>
+                <input type="text" name="task_value" id="task-value">
 
-      <div id="expanse">general expense</div>
-      <div id="gain">general gain</div>
-      <div id="add">
-        <div>
-          <label for="task_name">Nome da ação:</label>
-          <input type="text" name="task_name" id="task-name">
-
-          <label for="task_value">Valor da ação:</label>
-          <input type="text" name="task_value" id="task-value">
-
-          <button id="addGain">Adicionar como Ganho</button>
-          <button id="addExpansive">Adicionar como Gasto</button>
+                <button id="addGain">Adicionar como Ganho</button>
+                <button id="addExpansive">Adicionar como Gasto</button>
+            </div>
         </div>
-      </div>
     </div>
 
-  </div>
+    </div>
 
-  <div class="menu">
-    <div class="item" id="home_btn">
-      <img src="./icons/botao-home.png" alt="" srcset="">
+    <div class="menu">
+        <div class="item" id="home_btn">
+            <img src="./icons/HomeHouse.svg">
+        </div>
+        <div class="item" id="expanse_btn">
+            <img src="./icons/ArrowDown.svg">
+        </div>
+        <div class="item" id="gain_btn">
+            <img src="./icons/ArrowUp.svg">
+        </div>
+        <div class="item" id="add_btn">
+            <div>Adicionar</div>
+            <img src="./icons/AddPlus.svg">
+        </div>
     </div>
-    <div class="item" id="expanse_btn">
-      <img src="./icons/preco-baixo.png" alt="" srcset="">
-    </div>
-    <div class="item" id="gain_btn">
-      <img src="./icons/preco-alto.png" alt="" srcset="">
-    </div>
-    <div class="item" id="add_btn">
-      <div>Adicionar</div>
-      <img src="./icons/add.png" alt="" srcset="">
-    </div>
-  </div>
 
-  <script src="./index.js"></script>
-  <script src="./scripts/AddAction.js"></script>
+    <script src="./index.js"></script>
+    <script src="./scripts/AddAction.js"></script>
 
 </body>
+
 </html>

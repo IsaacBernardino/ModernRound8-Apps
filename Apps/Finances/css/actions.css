@@ -1,50 +1,44 @@
 #actions {
-  height: 385px;
-  overflow-y: auto;
-  overflow-x: hidden;
+    height: 385px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .action {
-  position: relative;
-  background: #333;
-  color: #eee;
-
-  padding: 15px 10px;
-  margin: 5px 0;
-
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
+    position: relative;
+    background: #333;
+    color: #eee;
+    padding: 15px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .expanse {
-  background: #aa1225;
+    background: #aa1225;
 }
 
 .gain {
-  background: #12bb25;
+    background: #12bb25;
 }
 
 .action h1 {
-  background-color: red;
-  font-size: 15pt !important;
-  text-overflow: ellipsis !important;
-  color: #eee;
-  width: 65%;
-
-  overflow-x: hidden;
+    font-size: 15pt !important;
+    text-overflow: ellipsis !important;
+    color: #eee;
+    width: 65%;
+    overflow-x: hidden;
 }
 
 .value {
-  position: absolute;
-  align-self: end;
-
-  font-weight: 600;
-  font-size: 15pt;
+    position: absolute;
+    align-self: end;
+    font-weight: 600;
+    font-size: 15pt;
 }
 
 .action h2 {
-  font-size: 16pt;
-  width: 100%;
+    font-size: 16pt;
+    width: 100%;
 }
