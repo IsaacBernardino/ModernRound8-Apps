@@ -19,12 +19,14 @@ const home_button = document.querySelector('#home_btn');
 const expanse_button = document.querySelector('#expanse_btn');
 const gain_button = document.querySelector('#gain_btn');
 const add_button = document.querySelector('#add_btn');
+const about_button = document.querySelector('#about');
 
 const buttons = [
     home_button,
     expanse_button,
     gain_button,
-    add_button
+    add_button,
+    about_button
 ]
 
 // On load
@@ -40,7 +42,7 @@ window.addEventListener('load', () => {
     add_screen.style.display = 'none';
 });
 
-// Cliques
+// Cliques no menu
 home_button.addEventListener('click', () => {
     page_title.innerHTML = 'Inicio'
     disablePages()
@@ -63,6 +65,10 @@ add_button.addEventListener('click', () => {
     page_title.innerHTML = 'Adicionar Ação'
     disablePages();
     activePageOnClick(add_screen, add_button)
+})
+
+about_button.addEventListener('click', () => {
+  alert('Version: 0.5 \nBy Senior')
 })
 
 function disablePages() {
